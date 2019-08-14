@@ -13,6 +13,6 @@ jobs:
     - name: Where am I?
       run: pwd && ls -la
     - name: How is Docker?
-      run: docker --version && docker ps
+      run: docker --version && docker ps && docker images
     - name: Build the Tabris Docker image
       run: docker build . --file Dockerfile --tag tabris-js-build-android:2.x
