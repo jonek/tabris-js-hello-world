@@ -10,3 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: echo "Hello Tabris.js!"
+    - name: Where am I?
+      run: pwd && ls -la
+    - name: How is Docker?
+      run: docker --version && docker ps
